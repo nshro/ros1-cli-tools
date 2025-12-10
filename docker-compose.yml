@@ -1,0 +1,9 @@
+services:
+  rosbag:
+    build: .
+    volumes:
+      - ./:/data
+      - ${HOME}:/host
+    working_dir: /data
+    entrypoint: ["rosbag"]
+
